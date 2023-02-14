@@ -1,4 +1,4 @@
 [jumpbox]
-jumpserver.roboshop.internal, URL=inventory.example.com
+jumpserver.roboshop.internal URL=inventory.example.com
 [cart]
 cart.roboshop.internal

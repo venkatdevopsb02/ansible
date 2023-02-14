@@ -6,7 +6,7 @@
       msg: Hello, world!
 
 - name: Demo Playbook 2
-  hosts: webserver
+  hosts: cart
   tasks:
   - name: Print message
     ansible.builtin.debug:

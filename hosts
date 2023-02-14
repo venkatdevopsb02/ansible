@@ -1,4 +1,4 @@
 [jumpbox]
 jumpserver.roboshop.internal
-[webserver]
-10.0.0.4
+[cart]
+cart.roboshop.internal

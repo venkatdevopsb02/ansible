@@ -4,3 +4,10 @@
   - name: Print message
     ansible.builtin.debug:
       msg: Hello, world!
+
+- name: Demo Playbook 2
+  hosts: webserver
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: Hello, Azure      

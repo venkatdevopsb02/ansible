@@ -20,7 +20,14 @@
   hosts: jumpbox
   tasks:
   - name: Print message
+    vars:
+      URL: task.example.com  
     ansible.builtin.debug:
       msg: Hello - {{URL}}   
-    vars:
-      URL: task.example.com     
+     
+- name: Demo on variables - inventory-file
+  hosts: jumpbox
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: Hello - {{URL}}       

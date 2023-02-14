@@ -7,7 +7,7 @@
     ansible.builtin.debug:
       msg: Hello - {{URL}}
 
-- name: Demo on variables 
+- name: Demo on variables - using file 
   hosts: jumpbox
   vars_files:
     - sample-vars.yml  
@@ -15,3 +15,12 @@
   - name: Print message
     ansible.builtin.debug:
       msg: Hello - {{URL}}      
+
+- name: Demo on variables - task 
+  hosts: jumpbox
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: Hello - {{URL}}   
+    vars:
+      URL: task.example.com     

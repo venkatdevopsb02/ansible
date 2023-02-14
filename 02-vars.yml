@@ -1,8 +1,17 @@
 - name: Demo on variables 
-  hosts: all
+  hosts: jumpbox
   vars:
     URL: play.example.com 
   tasks:
   - name: Print message
     ansible.builtin.debug:
       msg: Hello - {{URL}}
+
+- name: Demo on variables 
+  hosts: jumpbox
+  vars_files:
+    - sample-vars.yml  
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: Hello - {{URL}}      

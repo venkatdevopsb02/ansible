@@ -1,0 +1,6 @@
+- name: Demo Playbook to say Hello World
+  hosts: jumpbox
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: Hello, world!

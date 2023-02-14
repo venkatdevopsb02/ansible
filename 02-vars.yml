@@ -30,4 +30,14 @@
   tasks:
   - name: Print message
     ansible.builtin.debug:
-      msg: Hello - {{URL}}       
+      msg: Hello - {{URL}}   
+
+
+- name: Demo on facts/pre-defined variables
+  hosts: jumpbox
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: My name is - {{ansible_hostname}}
+      msg: My IP is - {{ansible_all_ipv4_addresses}}  
+

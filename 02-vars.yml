@@ -48,7 +48,7 @@
   hosts: jumpbox
   tasks:
   - name: get uptime 
-    ansible.builtin.debug: uptime
+    ansible.builtin.shell: uptime
     register: out 
   - name: get the uptime data from defined variable
     ansible.builtin.debug:

@@ -1,0 +1,4 @@
+- name: Demo on role
+  hosts: jumpbox
+  roles:
+    - demo

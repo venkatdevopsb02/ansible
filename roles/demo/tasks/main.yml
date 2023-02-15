@@ -1,0 +1,5 @@
+- name: Demo on variables - using file 
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: Hello - {{URL}} 

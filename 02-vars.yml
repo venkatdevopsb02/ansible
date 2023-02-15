@@ -53,4 +53,10 @@
   - name: get the uptime data from defined variable
     ansible.builtin.debug:
       msg: "{{out.stdout}}"
+  - name: Setting host facts using complex arguments
+    ansible.builtin.set_fact:
+      fact1: "{{out.stdout}}"  
+  - name: Print message
+    ansible.builtin.debug:
+      msg: My fact1 is - {{fact1}}         
 

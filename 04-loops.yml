@@ -1,0 +1,9 @@
+- name: Demo on loops
+  hosts: jumpbox 
+  ansible.builtin.debug:
+    msg: I am eating - {{item}}
+  loop: 
+    - apple 
+    - orange 
+    - pineapple
+

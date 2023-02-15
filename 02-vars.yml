@@ -38,7 +38,9 @@
   tasks:
   - name: Print message
     ansible.builtin.debug:
-      - msg: My name is - {{ansible_hostname}}
-      - msg: My IP is - {{ansible_all_ipv4_addresses}}  
-      - msg: Hello - {{URL}}
+      msg: My name is - {{ansible_hostname}}
+  - name: Print message2
+    ansible.builtin.debug:      
+      msg: My IP is - {{ansible_all_ipv4_addresses}}  
+
 

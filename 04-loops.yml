@@ -10,12 +10,12 @@
   tasks:      
   - name: Using dict2items
     ansible.builtin.debug:
-      msg: "{{ item.key }} - {{ item.value }}"
-    loop: "{{ tag_data | dict2items }}"
-    vars:
-      tag_data:
-        Environment: dev
-        Application: payment     
+      msg: I have {{ item.quantity }} {{ item.name }}
+    loop: 
+      - "{{ name: apple, quantity: 10 }}"
+      - "{{ name: orange, quantity: 20 }}"
+      - "{{ name: pineapple, quantity: 30 }}"
+   
 
 
   

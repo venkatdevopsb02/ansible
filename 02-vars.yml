@@ -44,3 +44,13 @@
       msg: My IP is - {{ansible_all_ipv4_addresses}}  
 
 
+- name: Registering a variable
+  hosts: jumpbox
+  tasks:
+  - name: get uptime 
+    ansible.builtin.debug: uptime
+    register: out 
+  - name: get the uptime data from defined variable
+    ansible.builtin.debug:
+      msg: {{out.stdout}}
+

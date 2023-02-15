@@ -12,9 +12,9 @@
     ansible.builtin.debug:
       msg: I have {{ item.quantity }} {{ item.name }}
     loop: 
-      - {{ name: apple, quantity: 10 }}
-      - {{ name: orange, quantity: 20 }}
-      - {{ name: pineapple, quantity: 30 }}
+      - {name: apple, quantity: 10}
+      - {name: orange, quantity: 20}
+      - {name: pineapple, quantity: 30}
    
 
 

@@ -1,4 +1,4 @@
 [jumpbox]
-jumpserver.roboshop.internal URL=inventory.example.com ansible_ssh_user=centos ansible_ssh_pass=DevOps654321 ansible_sudo_pass=DevOps654321
+jumpserver.roboshop.internal URL=inventory.example.com ansible_ssh_user=centos ansible_ssh_pass=##dummy## ansible_sudo_pass=##dummy##
 [cart]
-cart.roboshop.internal ansible_ssh_user=centos ansible_ssh_pass=DevOps654321 ansible_sudo_pass=DevOps654321
+cart.roboshop.internal ansible_ssh_user=centos ansible_ssh_pass=##dummy## ansible_sudo_pass=##dummy##

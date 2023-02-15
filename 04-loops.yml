@@ -7,4 +7,16 @@
       - apple 
       - orange 
       - pineapple
+  tasks:      
+  - name: Using dict2items
+    ansible.builtin.debug:
+      msg: "{{ item.key }} - {{ item.value }}"
+    loop: "{{ tag_data | dict2items }}"
+    vars:
+      tag_data:
+        Environment: dev
+        Application: payment     
+
+
+  
 

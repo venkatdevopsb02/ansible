@@ -52,5 +52,5 @@
     register: out 
   - name: get the uptime data from defined variable
     ansible.builtin.debug:
-      msg: {{out.stdout}}
+      msg: "{{out.stdout}}"
 

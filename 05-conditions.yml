@@ -1,10 +1,15 @@
 - name: Demo Playbook to say Hello World
   hosts: jumpbox
   vars:
-    a: 0 
+    a: 10 
     var1: true 
   tasks:
   - name: Print message
     ansible.builtin.debug:
       msg: Hello, world!
     when: ansible_facts['distribution'] == "centOS" 
+
+  - name: Number check condition
+    ansible.builtin.debug:
+      msg: "{{a}} is greater than 1"
+    when: a > 1     

@@ -1,0 +1,10 @@
+- name: Demo Playbook to say Hello World
+  hosts: jumpbox
+  vars:
+    a: 0 
+    var1: true 
+  tasks:
+  - name: Print message
+    ansible.builtin.debug:
+      msg: Hello, world!
+    when: ansible_selinux.status == "disabled"  

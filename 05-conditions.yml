@@ -7,4 +7,4 @@
   - name: Print message
     ansible.builtin.debug:
       msg: Hello, world!
-    when: ansible_facts['distribution'] == "CentOS" 
+    when: ansible_facts['distribution'] == "centOS" 

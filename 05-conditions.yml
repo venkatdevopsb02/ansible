@@ -16,5 +16,5 @@
 
   - name: Boolean check condition
     ansible.builtin.debug:
-      msg: "{{a}} is greater than 1"
+      msg: "Yes - the value is boolean"
     when: var1 | bool      
